@@ -35,6 +35,12 @@ Este trabalho foi desenvolvido como parte da disciplina **Redes 1**, ministrada 
 2. Abra o projeto em sua IDE de preferência.
 3. Compile e execute o código principal para iniciar a simulação.
 
+   
+## Aprendizados
+- Manipulação de bits
+- Codigos de enquadramento
+- Processo de funcionamento de uma rede com seus protocolos e camadas
+
 
 ## Autor
 **Franco Ribeiro Borba**
