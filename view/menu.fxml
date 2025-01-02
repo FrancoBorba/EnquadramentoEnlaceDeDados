@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerCapa">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/capaRede.png" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="codificacaoBinaria" arcHeight="5.0" arcWidth="5.0" fill="#ebedee" height="146.0" layoutX="389.0" layoutY="128.0" onMouseClicked="#codificacaoBinaria" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="205.0" />
+      <Rectangle fx:id="codificacaoManchester" arcHeight="5.0" arcWidth="5.0" fill="#ebedee" height="146.0" layoutX="389.0" layoutY="274.0" onMouseClicked="#codificacaoManchester" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="205.0" />
+      <Rectangle fx:id="codificacaoManchesterDiferencial" arcHeight="5.0" arcWidth="5.0" fill="#ebedee" height="146.0" layoutX="389.0" layoutY="420.0" onMouseClicked="#codificacaoManchesterDiferencial" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="205.0" />
+      <RadioButton fx:id="contagemDeCaracter" layoutX="31.0" layoutY="274.0" mnemonicParsing="false" onAction="#escolherEnquadramento" selected="true" text="Contagem de Caracter">
+         <toggleGroup>
+            <ToggleGroup fx:id="tipoDeEnquadramento" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="insercaoDeBytes" layoutX="31.0" layoutY="316.0" mnemonicParsing="false" onAction="#escolherEnquadramento" text="Inserção de bytes" toggleGroup="$tipoDeEnquadramento">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="insercaoDeBits" layoutX="31.0" layoutY="359.0" mnemonicParsing="false" onAction="#escolherEnquadramento" text="Inserção de bits" toggleGroup="$tipoDeEnquadramento">
+         <font>
+            <Font size="14.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="violacaoCamadaFisica" layoutX="31.0" layoutY="400.0" mnemonicParsing="false" onAction="#escolherEnquadramento" text="Violação da Camada Física" toggleGroup="$tipoDeEnquadramento">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

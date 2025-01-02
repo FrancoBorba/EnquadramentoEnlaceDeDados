@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="painelDeOndas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerAplicacao">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1000.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/aplicacao.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="entradaMensagem" layoutX="112.0" layoutY="398.0" promptText="Mensagem" />
+      <ImageView fx:id="botaoEnviar" fitHeight="155.0" fitWidth="269.0" layoutX="142.0" layoutY="335.0" onMouseClicked="#enviarMensagem" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/botaoEnviar.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="25.0" layoutX="733.0" layoutY="398.0" stroke="BLACK" strokeType="INSIDE" width="149.0" />
+      <Label fx:id="labelTela" layoutX="737.0" layoutY="402.0" prefHeight="16.0" prefWidth="142.0" text="Mensagem" />
+      <ImageView fitHeight="86.0" fitWidth="86.0" layoutX="7.0" layoutY="14.0" onMouseClicked="#voltarTela" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/botaoVoltar.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
